@@ -104,8 +104,8 @@ function keepalive() {
   });
 }
 
-//保活频率设置为30秒
-setInterval(keepalive, 30 * 1000);
+//保活频率设置为800秒
+setInterval(keepalive, 8000 * 1000);
 /* keepalive  end */
 
 function startWeb() {
