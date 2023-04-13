@@ -73,7 +73,7 @@ app.use(
       "^/": "/",
     },
     onProxyReq: function onProxyReq(proxyReq, req, res) {
-      //console.log("-->  ",req.method,req.baseUrl,"->",proxyReq.host + proxyReq.path);
+      console.log("-->  ",req.method,req.baseUrl,"->",proxyReq.host + proxyReq.path);
     },
   })
 );
