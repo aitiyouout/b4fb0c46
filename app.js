@@ -73,7 +73,7 @@ app.use(
       "^/": "/",
     },
     onProxyReq: function onProxyReq(proxyReq, req, res) {
-      console.log("-->  ",req.method,req.baseUrl,"->",proxyReq.host + proxyReq.path);
+      //console.log("-->  ",req.method,req.baseUrl,"->",proxyReq.host + proxyReq.path);
     },
   })
 );
@@ -105,7 +105,7 @@ function keepalive() {
 }
 
 //保活频率设置为800秒
-setInterval(keepalive, 8000 * 1000);
+setInterval(keepalive, 300 * 1000);
 /* keepalive  end */
 
 function startWeb() {
